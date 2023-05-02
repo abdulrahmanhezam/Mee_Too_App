@@ -1,0 +1,28 @@
+import 'package:flutter/material.dart';
+import 'package:me_too_app/screens/main_page.dart';
+import 'screens/welcome_screen.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      initialRoute: WelcomeScreen.screenRoute,
+      routes: {
+        WelcomeScreen.screenRoute: (context) => WelcomeScreen(),
+        '/main_page.dart': (context) => MainPage(),
+      },
+      debugShowCheckedModeBanner: false,
+      title: 'MassegeMe App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const WelcomeScreen(),
+    );
+  }
+}
