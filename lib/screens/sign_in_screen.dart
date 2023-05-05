@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:me_too_app/screens/sign_in_screen.dart';
+import 'package:me_too_app/screens/sign_up_screen.dart';
 
-class SignUp extends StatelessWidget {
-  const SignUp({Key? key}) : super(key: key);
+class SignIn extends StatelessWidget {
+  const SignIn({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +62,7 @@ class SignUp extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.all(8.0),
                 child: Text(
-                  "Sign up",
+                  "Sign in",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -76,23 +76,6 @@ class SignUp extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Text("User Name"),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      TextField(
-                        decoration: InputDecoration(
-                          hintStyle: const TextStyle(color: Colors.grey),
-                          filled: true,
-                          fillColor: Colors.grey[200],
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none,
-                          ),
-                          contentPadding: const EdgeInsets.symmetric(
-                              vertical: 10, horizontal: 16),
-                        ),
-                      ),
-                      const Text("Email"),
                       const SizedBox(
                         height: 10,
                       ),
@@ -145,7 +128,7 @@ class SignUp extends StatelessWidget {
                       shadowColor: const Color(0x40000000),
                     ),
                     onPressed: () {},
-                    child: const Text("Sign up"),
+                    child: const Text("Sign in"),
                   ),
                 ),
               )
@@ -218,10 +201,10 @@ class SignUp extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const SignIn()),
+                    MaterialPageRoute(builder: (context) => const SignUp()),
                   );
                 },
-                child: const Text("Sign up"),
+                child: const Text("Sign in"),
               )
             ],
           ),

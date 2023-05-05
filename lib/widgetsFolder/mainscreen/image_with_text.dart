@@ -69,17 +69,17 @@ class ImageWithTextAndButton extends StatelessWidget {
                                 builder: (context) => const SignUp()),
                           );
                         },
-                        child: Text(
-                          'Set Meetings',
-                          style: TextStyle(fontSize: 15, fontFamily: 'Inter'),
-                        ),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Color.fromRGBO(107, 191, 236, 0.68),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
                           ),
                           elevation: 4,
-                          shadowColor: Color(0x40000000),
+                          shadowColor: const Color(0x40000000),
+                        ),
+                        child: Text(
+                          'Set Meetings',
+                          style: TextStyle(fontSize: 15, fontFamily: 'Inter'),
                         ),
                       ),
                     ),
