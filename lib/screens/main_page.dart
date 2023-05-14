@@ -24,7 +24,7 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       body: Padding(
         padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.07),
-        child: Column(
+        child: ListView(
           children: [
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.1,
